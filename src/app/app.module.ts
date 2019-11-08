@@ -9,16 +9,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTableModule} from '@angular/material/table';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 const appRoutes: Routes = [
   { path: 'showcities', component: ShowCitiesComponent },
+  { path: 'welcome', component: WelcomeComponent },
 ];
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ShowCitiesComponent
+    ShowCitiesComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
